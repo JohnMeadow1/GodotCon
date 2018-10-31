@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://spaceship.tscn" type="PackedScene" id=1]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=2]
+
+[node name="main" type="Node"]
+
+[node name="spaceship" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 155.652, 188.063 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="enemy" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 628.961, 189.762 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="bullets" type="Node" parent="." index="2"]
+
+[node name="rockets" type="Node" parent="." index="3"]
+
+

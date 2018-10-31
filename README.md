@@ -14,4 +14,5 @@ Example of drift implementation including drawing of skid marks.
 
 ### [spaceships_2d](/source/spaceships_2d)
 Finding targeting solution using approximation and quadratic equation:
+
 ![spaceships_2d](/animations/spaceships_2d.gif)

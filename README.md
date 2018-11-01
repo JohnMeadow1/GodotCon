@@ -1,7 +1,9 @@
 # GodotCon2018
 Repository contains Presentation and code examples from Godot Conference in Poznań, 2018.
 
-All examples are created using [Godot Engine 3](https://github.com/godotengine/godot)
+*Powered by [Godot Engine](https://godotengine.org)*
+
+![godot-logo](https://raw.githubusercontent.com/godotengine/godot/master/logo.png)
 
 ## Presentation:
 Presentation with animations as a .pptx:

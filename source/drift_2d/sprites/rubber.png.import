@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rubber.png-3816c61387698365df335751160a27c3.stex"
+path="res://.import/rubber.png-f001916019095bc0e159ca290d01e83f.stex"
 
 [deps]
 
-source_file="res://img/rubber.png"
-dest_files=[ "res://.import/rubber.png-3816c61387698365df335751160a27c3.stex" ]
+source_file="res://sprites/rubber.png"
+dest_files=[ "res://.import/rubber.png-f001916019095bc0e159ca290d01e83f.stex" ]
 
 [params]
 

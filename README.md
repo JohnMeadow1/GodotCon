@@ -1,5 +1,5 @@
 # GodotCon2018
-Repository with Presentation and code examples from Godot Conference in Poznań
+Repository with Presentation and code examples from Godot Conference in Poznań, 2018.
 
 ## Presentation:
 Presentation with animations as a .pptx:

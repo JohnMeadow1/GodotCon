@@ -10,6 +10,7 @@ presentation as a .pdf:
 ## Workshop projects:
 ### [drift_2d](/source/drift_2d)
 Example of drift implementation including drawing of skid marks.
+
 ![drift_2d](/animations/drift_2d.gif)
 
 ### [spaceships_2d](/source/spaceships_2d)

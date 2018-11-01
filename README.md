@@ -2,10 +2,11 @@
 Repository with Presentation and code examples from Godot Conference in Poznań
 
 ## Presentation:
-presentation with animations:
+Presentation with animations as a .pptx:
 
 ![Teaching_physics_and_simulations_with_Godot.pptx](/presentation/)
-presentation as a .pdf:
+
+Presentation as a .pdf:
 
 ![Teaching_physics_and_simulations_with_Godot.pdf](/presentation/Teaching_physics_and_simulations_with_Godot.pdf)
 

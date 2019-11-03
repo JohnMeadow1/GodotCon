@@ -16,7 +16,7 @@ func _physics_process(delta):
 	wind += delta
 	for node in $verticles.get_children():
 		if node.is_static != true:
-#			external_force.x = abs(sin(wind + node.position.y/100.0) + abs(sin((wind+ node.position.y/100.0)*3.67))) * 1000
+			external_force.x = abs(sin(wind + node.position.y/100.0) + abs(sin((wind+ node.position.y/100.0)*3.67))) * 1000
 			aplly_external_forces( node, delta )
 			apply_velocity_damping( node, delta, damping )
 			calculate_projected_position( node, delta )

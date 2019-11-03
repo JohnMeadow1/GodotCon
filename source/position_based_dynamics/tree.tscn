@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://leaf.tscn" type="PackedScene" id=1]
+[ext_resource path="res://images/leaf_texture1.png" type="Texture" id=2]
+[ext_resource path="res://trunk.gd" type="Script" id=3]
+[ext_resource path="res://images/trunk.png" type="Texture" id=4]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 1 ), 0.0, -1.70498, 0, 0, Vector2( 1, 0.4912 ), -0.0817183, 0.0, 0, 0 ]
+
+[node name="tree" type="Node2D"]
+script = ExtResource( 3 )
+is_tearable_body = false
+damping = 10
+verticles = 5
+verticles_distance = 50.0
+
+[node name="verticles" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="constraints" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line2D" type="Line2D" parent="."]
+width = 24.0
+width_curve = SubResource( 1 )
+default_color = Color( 0, 0.529412, 1, 1 )
+texture = ExtResource( 2 )
+texture_mode = 1
+joint_mode = 2
+end_cap_mode = 2
+round_precision = 4
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leafs" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leaf" parent="leafs" instance=ExtResource( 1 )]
+position = Vector2( 74, -330 )
+angle = 5
+
+[node name="leaf6" parent="leafs" instance=ExtResource( 1 )]
+position = Vector2( 74, -330 )
+angle = -5
+
+[node name="leaf8" parent="leafs" instance=ExtResource( 1 )]
+position = Vector2( 74, -330 )
+angle = 10
+
+[node name="leaf7" parent="leafs" instance=ExtResource( 1 )]
+position = Vector2( 74, -330 )
+angle = -10
+
+[node name="leaf2" parent="leafs" instance=ExtResource( 1 )]
+position = Vector2( 74, -330 )
+angle = 15
+
+[node name="leaf3" parent="leafs" instance=ExtResource( 1 )]
+position = Vector2( 74, -330 )
+angle = -15
+
+[node name="leaf4" parent="leafs" instance=ExtResource( 1 )]
+position = Vector2( 74, -330 )
+angle = -30
+
+[node name="leaf5" parent="leafs" instance=ExtResource( 1 )]
+position = Vector2( 74, -330 )
+angle = 30
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2, -153 )
+texture = ExtResource( 4 )

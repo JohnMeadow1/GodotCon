@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://stiff_soft_box.gd" type="Script" id=1]
+[ext_resource path="res://images/leaf_texture1.png" type="Texture" id=2]
+
+[node name="stiff_soft_box" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+compress_stiffness = 0.6
+stretch_stiffness = 0.6
+
+[node name="verticles" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="constraints" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Line2D" type="Line2D" parent="."]
+width = 24.0
+default_color = Color( 0, 0.529412, 1, 1 )
+texture = ExtResource( 2 )
+joint_mode = 2
+end_cap_mode = 2
+round_precision = 4
+__meta__ = {
+"_edit_lock_": true
+}

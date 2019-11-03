@@ -1,0 +1,97 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Boop",
+"language": "GDScript",
+"path": "res://soft_body.gd"
+}, {
+"base": "PositionBasedDynamics",
+"class": "ClothPDB",
+"language": "GDScript",
+"path": "res://cloth.gd"
+}, {
+"base": "PositionBasedDynamics",
+"class": "Leaf",
+"language": "GDScript",
+"path": "res://leaf.gd"
+}, {
+"base": "Node2D",
+"class": "LinkNode",
+"language": "GDScript",
+"path": "res://distance_constraint.gd"
+}, {
+"base": "Node2D",
+"class": "PointMass",
+"language": "GDScript",
+"path": "res://point_mass.gd"
+}, {
+"base": "Node2D",
+"class": "PositionBasedDynamics",
+"language": "GDScript",
+"path": "res://position_based_dynamics.gd"
+}, {
+"base": "PositionBasedDynamics",
+"class": "Puncher",
+"language": "GDScript",
+"path": "res://puncher.gd"
+}, {
+"base": "PositionBasedDynamics",
+"class": "Rope",
+"language": "GDScript",
+"path": "res://rope.gd"
+}, {
+"base": "PositionBasedDynamics",
+"class": "SoftBox",
+"language": "GDScript",
+"path": "res://stiff_soft_box.gd"
+}, {
+"base": "PositionBasedDynamics",
+"class": "StiffSoftBox",
+"language": "GDScript",
+"path": "res://soft_box.gd"
+}, {
+"base": "PositionBasedDynamics",
+"class": "Trunk",
+"language": "GDScript",
+"path": "res://trunk.gd"
+} ]
+_global_script_class_icons={
+"Boop": "",
+"ClothPDB": "",
+"Leaf": "",
+"LinkNode": "",
+"PointMass": "",
+"PositionBasedDynamics": "",
+"Puncher": "",
+"Rope": "",
+"SoftBox": "",
+"StiffSoftBox": "",
+"Trunk": ""
+}
+
+[application]
+
+config/name="Position Based Soft Body 2D"
+run/main_scene="res://main.tscn"
+config/icon="res://icon.png"
+
+[debug]
+
+settings/stdout/print_fps=true
+
+[display]
+
+window/size/height=768
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/spaceship.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=2]
+
+[node name="main" type="Node2D"]
+
+[node name="Spaceship" parent="." instance=ExtResource( 1 )]
+position = Vector2( 545, 236 )
+
+[node name="Enemy" parent="." instance=ExtResource( 2 )]
+position = Vector2( 662, 456 )
+
+[node name="bullets" type="Node" parent="."]
+
+[node name="rockets" type="Node" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 128.0
+margin_bottom = 75.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "Keys:
+1 - toggle missiles
+2 - toggle laser
+q - toggle debug drawing"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,5 +1,5 @@
 # GodotCon
-Repository contains mine presentation and code demonstrated on GodotCon since 2018.
+Repository contains presentations and code from my talks on GodotCon / GodotFest since 2018.
 
 *Powered by [Godot Engine](https://godotengine.org)*
 
